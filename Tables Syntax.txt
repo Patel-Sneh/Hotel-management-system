@@ -1,0 +1,87 @@
+drop database hotel_management2 if exists;
+create database hotel_management2;
+use database hotel_management;
+create table amusement_bill
+(Room_no int(3) primary key,
+Num_Waterpolo int(2) default 0,
+Num_Bumpingcar int(2) default 0,
+Num_4Dmovie int(2) default 0,
+Num_GoKart int(2) default 0,
+Num_F1sim int(2) default 0,
+Amusement_Bill int(7) default 0);
+create table bar_bill
+(Room_no int(3) primary key,
+Num_Water int(2) default 0,
+Num_Pinacolada int(2) default 0,
+Num_Fruitpunch int(2) default 0,
+Num_Scotchwhiskey int(2) default 0,
+Num_Vodkashots int(2) default 0,
+Bar_Bill int(7) default 0
+);
+create table carrent_bill
+(Room_no int(3) primary key,
+Num_Jeep int(2) default 0,
+Num_Landrover int(2) default 0,
+Num_Volkswagen int(2) default 0,
+Num_Mercedes int(2) default 0,
+Num_RollsRoyce int(2) default 0,
+CarRent_Bill int(7) default 0
+);
+create table food_bill
+(Room_no int(3) primary key,
+Num_Water int(2) default 0,
+Num_Tea int(2) default 0,
+Num_BreakfastCombo int(2) default 0,
+Num_LunchCombo int(2) default 0,
+Num_DinnerCombo int(2) default 0,
+Food_Bill int(7) default 0
+);
+create table game_bill
+(Room_no int(3) primary key,
+Num_Tabletennis int(2) default 0,
+Num_Bowling int(2) default 0,
+Num_Snooker int(2) default 0,
+Num_Videogames int(2) default 0,
+Num_Pool int(2) default 0,
+Game_bill int(7) default 0
+);
+create table laundry_bill
+(Room_no int(3) primary key,
+Num_Shorts int(2) default 0,
+Num_Trousers int(2) default 0,
+Num_Shirt int(2) default 0,
+Num_Jeans int(2) default 0,
+Num_Girlsuit int(2) default 0,
+Laundry_Bill int(7) default 0
+);
+create table cust_data
+(Room_no int(3) primary key,
+Name varchar(20),
+Address varchar(20),
+Checkout_Date varchar(20),
+Number_Of_days int(3),
+Room_Type varchar(12),
+Total_Room_Cost int(8)
+);
+create table Services_bill
+(Room_no int(3) primary key,
+Num_Hairspa int(2) default 0,
+Num_bodyspa int(2) default 0,
+Num_hotwaterbath int(2) default 0,
+Num_indoorgym int(2) default 0,
+Num_outdoorgym int(2) default 0,
+Services_bill int(7) default 0
+);
+create table t1
+(Room_no int(3) primary key,
+Name varchar(20),
+Total_Room_Cost int(10),
+Food_bill int(10),
+Laundry_bill int(10),
+bar_bill int(10),
+carrent_bill int(10),
+game_bill int(10),
+Services_bill int(10),
+amusement_bill int(10),
+Cost int(10)
+);
