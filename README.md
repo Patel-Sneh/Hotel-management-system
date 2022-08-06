@@ -23,3 +23,6 @@ This is a beginners project made for Class 10-12 Python Project.
 * * *
 
 This project can be improved by using different User Defined Modules and by using User Defined Function in Python.
+
+
+TableSyntax.txt is the text file containing the code of the Table syntax for MySQL which can be directly pasted into MySQL commandline before running the GranduerResort.py Code.
